@@ -1,0 +1,19 @@
+Based on http://www.sitepoint.com/creating-restful-apis-express-4/
+and http://www.sitepoint.com/creating-crud-app-minutes-angulars-reource/
+
+Server is CORS-enabled and the client and server can be deployed to different locations
+IMPORTANT: Probably want to consider limiting CORS to a specific origin or whitelist (see cors module docs for how to do that)
+
+
+To test easily locally:
+open terminal
+mongod    to start mongo
+open another terminal
+cd to server directory
+node bin/www.js
+open another terminal
+cd to client directory
+(install python if not already installed)
+"c:\program files (x86)\python34\python" -m http.server 8888
+On Mac, use python3 -m http.server 8888
+open localhost:8888 in browser
