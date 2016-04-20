@@ -15,7 +15,7 @@ export class AlbumDetailServiceComponent {
   getAlbum (id: string): Observable<Album>  {
     this._albumsUrl += id;
 
-      this.http.get(this._albumsUrl).subscribe((res:Response) => console.debug(JSON.stringify(res)));
+    this.http.get(this._albumsUrl).subscribe((res:Response) => console.debug(JSON.stringify(res)));
       
     return this.http.get(this._albumsUrl)
         .map(res => <Album> res.json())
@@ -27,7 +27,4 @@ export class AlbumDetailServiceComponent {
     return Observable.throw(error.json().error || 'Server error');
   }
 
-//  private _log(res): Album {
-//    return res.json();
-//  }
 }

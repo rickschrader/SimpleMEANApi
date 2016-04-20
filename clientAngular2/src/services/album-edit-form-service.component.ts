@@ -14,13 +14,9 @@ export class AlbumEditFormServiceComponent {
       this._albumsUrl += album._id;
 
     let body = JSON.stringify(album);
-    //let body = JSON.stringify({ title: album.title });
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
 
-      console.debug(body);
-     
-   
     return this.http.put(this._albumsUrl, body, options)
                     .map(res =>  <Album> res.json())
                     .catch(this._handleError)

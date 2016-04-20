@@ -40,13 +40,4 @@ import {AlbumEditFormComponent} from './components/album-edit-form.component';
 ])
 
 export class AppComponent {
-    
-//  constructor(
-//    private _router: Router
-//  ){}
-//
-//  ngOnInit() {
-//     this._router.navigate(['AlbumList'])
-//  }
-    
 }
