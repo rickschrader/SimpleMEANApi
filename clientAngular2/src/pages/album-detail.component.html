@@ -1,0 +1,13 @@
+<h3>Album Details</h3>
+
+<p *ngIf="currentAlbum != undefined">
+  Title: {{currentAlbum.title}}
+  <br />
+  Artist: {{currentAlbum.artist}}
+  <br />
+  <a [routerLink]="['EditAlbum', {id: currentAlbum._id}]">Edit</a>
+  <button type="button" class="btn btn-default"
+          (click)="deleteHandler(currentAlbum._id)">
+          Delete
+  </button>
+</p>

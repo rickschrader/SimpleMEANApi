@@ -1,0 +1,29 @@
+{
+  "name": "SimpleMEANAPIAngular2ExampleClient",
+  "version": "1.0.0",
+  "description": "Angular 2 example client to use a REST API",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run typings",
+    "typings": "typings install",
+    "start": "concurrently \"tsc -w -p src/ \" \"http-server -c-1 -o -p 3001 .\"",
+    "build": "tsc -p src",
+    "//": "BUILD VALUE FOR MAC/LINUX:   rm -rf dist && tsc -p src"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-beta.13",
+    "bootstrap": "^3.3.6",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "http-server": "0.8.5",
+    "systemjs": "0.19.17",
+    "typescript": "1.7.5",
+    "typings": "0.6.8"
+  }
+}

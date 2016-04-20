@@ -1,0 +1,17 @@
+<div class="container">
+    <h3>Edit Album</h3>
+    <form (ngSubmit)="onSubmit()" #albumForm="ngForm" *ngIf="currentAlbum != undefined">
+      <div class="form-group">
+          
+       <label for="name">Title</label>
+       <input type="text" class="form-control" required [(ngModel)]="currentAlbum.title"
+            ngControl="title"  #name="ngForm">
+          
+       <label for="artist">Artist</label>
+       <input type="text" class="form-control" required [(ngModel)]="currentAlbum.artist"
+            ngControl="artist"  #name="ngForm">
+
+      </div>
+      <button type="button" class="btn btn-default" (click)="editAlbum()" [disabled]="!albumForm.form.valid">Update</button>
+    </form>
+</div>
