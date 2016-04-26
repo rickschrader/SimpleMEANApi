@@ -1,17 +1,11 @@
 The A in MEAN is typically Angular, but I'm stretching it to be Aurelia for this example
 
+npm install -g gulp
+npm install -g jspm
+
 jspm cc (if problems with below)
 jspm install -y
 jspm dl-loader
 
-http-server -o -c-1
-
-Set specific versions (to the ones in the Aurelia starter kit) in the package.json for now, since pulling newer seems to cause major issues
-
-
-
-
-
-        //,
-      //"traceur": "github:jmcriffey/bower-traceur@0.0.88",
-      //"traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
+gulp serve
+(could install http-server module and use http-server -o -c-1)
