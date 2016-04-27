@@ -27,7 +27,7 @@ exports.getById = function(req, res, next) {
 };
 
 exports.create = function(req, res) {
-    var album = new Album(req.body);
+   var album = new Album(req.body);
 
     album.save(function(err) {
         if (err) {

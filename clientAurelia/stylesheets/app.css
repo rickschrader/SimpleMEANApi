@@ -1,0 +1,18 @@
+.page-host{
+    margin-top:70px;
+}
+
+.top-buffer{
+    margin-top:10px;
+}
+
+.albumtable tr td:nth-child(2){
+    width: 150px;
+}
+
+.albumtable tr:nth-child(1) td{
+    border-top: none;
+}
+a.nodecoration{
+    text-decoration:none;
+}

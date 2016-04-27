@@ -3,6 +3,15 @@ The A in MEAN is typically Angular, but I'm stretching it to be Aurelia for this
 Started based on http://stackoverflow.com/questions/32080221/how-to-set-up-minimal-aurelia-project-from-scratch
 Reference: http://aurelia.io/docs.html#/aurelia/framework/latest/doc/article/getting-started
 
+Calling APIs
+http://ilikekillnerds.com/2015/10/all-about-the-aurelia-fetch-client/
+https://auth0.com/blog/2015/08/05/creating-your-first-aurelia-app-from-authentication-to-calling-an-api/
+
+Routing
+http://www.elanderson.net/2015/10/aurelia-routing-with-a-parameter/
+http://stackoverflow.com/questions/28802243/how-can-i-redirect-to-another-view-model-in-aurelia-js
+
+http://stackoverflow.com/questions/33904248/aurelia-delegate-vs-trigger-how-do-you-know-when-to-use-delegate-or-trigger
 
 
 npm install -g gulp
