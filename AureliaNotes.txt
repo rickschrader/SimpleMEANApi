@@ -1,5 +1,10 @@
 The A in MEAN is typically Angular, but I'm stretching it to be Aurelia for this example
 
+Started based on http://stackoverflow.com/questions/32080221/how-to-set-up-minimal-aurelia-project-from-scratch
+Reference: http://aurelia.io/docs.html#/aurelia/framework/latest/doc/article/getting-started
+
+
+
 npm install -g gulp
 npm install -g jspm
 

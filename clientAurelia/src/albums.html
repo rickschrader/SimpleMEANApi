@@ -1,0 +1,41 @@
+<!--<template>
+  <section>
+    <h2>${heading}</h2>
+    <div class="row au-stagger">
+      <div class="col-sm-6 col-md-3 card-container" repeat.for="user of users">
+        <div class="card">
+          <canvas class="header-bg" width="250" height="70"></canvas>
+          <div class="avatar">
+            <img src.bind="user.avatar_url" crossorigin />
+          </div>
+          <div class="content">
+            <p class="name">${user.login}</p>
+            <p><a target="_blank" class="btn btn-default" href.bind="user.html_url">Contact</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+-->
+
+<template>
+    <section>
+        <a href.bind="" ui-sref="newAlbum" class="btn-primary btn-lg nodecoration">Add New Album</a>
+        <table class="table albumtable">
+            <tr>
+                <td>Album</td>
+                <td>Artist</td>
+                <td></td>
+            </tr>
+            <tr repeat.for="album of albums">
+                <td>${album.title}</td>
+                <td>${album.artist}</td>
+                <td>
+                    <a class="btn btn-primary" ui-sref="viewAlbum({id:album._id})">View</a>
+                    <a class="btn btn-danger"  ng-click="deleteAlbum(album)">Delete</a>
+                </td>
+            </tr>
+        </table>
+    </section>
+</template>
