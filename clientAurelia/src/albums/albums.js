@@ -21,7 +21,7 @@ export class Albums {
 
     activate() {
         console.log("Activating album list.")
-        return loadAlbums();
+        return this.loadAlbums();
     }
 
     loadAlbums() {
@@ -33,7 +33,7 @@ export class Albums {
     deleteAlbum(album) {
         
         this.http.fetch('albums/' + album._id, { method: 'delete' })
-          .then(() => loadAlbums());
+          .then(() => this.loadAlbums());
         
     }
 
