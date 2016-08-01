@@ -1,7 +1,0 @@
-Based on https://github.com/abhinavmsra/angular2
-
-npm install
-npm run build
-npm run start
-
-console.log messages go to console in browser dev tools
