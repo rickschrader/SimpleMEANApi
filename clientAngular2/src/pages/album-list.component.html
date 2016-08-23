@@ -1,9 +1,0 @@
-<ul class="albums">
-  <li *ngFor="#album of albums">
-    <a [routerLink]="['AlbumDetail', {id: album._id}]">
-      {{album.title}}
-      {{album.artist}}
-      {{album._id}}
-    </a>
-  </li>
-</ul>

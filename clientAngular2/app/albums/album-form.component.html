@@ -1,0 +1,12 @@
+<h3>{{heading}}</h3>
+
+<div>
+    <label>Title</label>
+    <input [(ngModel)]="album.title" placeholder="Title">
+</div>
+<div>
+    <label>Artist</label>
+    <input [(ngModel)]="album.artist" placeholder="Artist">
+</div>
+<button (click)="save(album)">Save</button>
+<a routerLink="/albums">Back to List</a>

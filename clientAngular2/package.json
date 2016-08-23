@@ -1,29 +1,39 @@
 {
-  "name": "SimpleMEANAPIAngular2ExampleClient",
-  "version": "1.0.0",
-  "description": "Angular 2 example client to use a REST API",
-  "main": "index.js",
-  "scripts": {
-    "postinstall": "npm run typings",
-    "typings": "typings install",
-    "start": "concurrently \"tsc -w -p src/ \" \"http-server -c-1 -o -p 3001 .\"",
-    "build": "tsc -p src",
-    "//": "BUILD VALUE FOR MAC/LINUX:   rm -rf dist && tsc -p src"
-  },
-  "dependencies": {
-    "angular2": "2.0.0-beta.13",
-    "bootstrap": "^3.3.6",
-    "es6-promise": "3.0.2",
-    "es6-shim": "0.35.0",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.2",
-    "zone.js": "0.6.6"
-  },
-  "devDependencies": {
-    "concurrently": "^2.0.0",
-    "http-server": "0.8.5",
-    "systemjs": "0.19.17",
-    "typescript": "1.7.5",
-    "typings": "0.6.8"
-  }
+    "name": "SimpleMEANAPIAngular2ExampleClient",
+    "version": "1.0.0",
+    "description": "Angular 2 example client to use a REST API",
+    "scripts": {
+        "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+        "lite": "lite-server",
+        "postinstall": "typings install",
+        "tsc": "tsc",
+        "tsc:w": "tsc -w",
+        "typings": "typings"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "@angular/common": "2.0.0-rc.5",
+        "@angular/compiler": "2.0.0-rc.5",
+        "@angular/core": "2.0.0-rc.5",
+        "@angular/forms": "0.3.0",
+        "@angular/http": "2.0.0-rc.5",
+        "@angular/platform-browser": "2.0.0-rc.5",
+        "@angular/platform-browser-dynamic": "2.0.0-rc.5",
+        "@angular/router": "3.0.0-rc.1",
+        "@angular/router-deprecated": "2.0.0-rc.2",
+        "@angular/upgrade": "2.0.0-rc.5",
+        "systemjs": "0.19.27",
+        "core-js": "^2.4.0",
+        "reflect-metadata": "^0.1.3",
+        "rxjs": "5.0.0-beta.6",
+        "zone.js": "^0.6.12",
+        "angular2-in-memory-web-api": "0.0.15",
+        "bootstrap": "^3.3.6"
+    },
+    "devDependencies": {
+        "concurrently": "^2.0.0",
+        "lite-server": "^2.2.0",
+        "typescript": "^1.8.10",
+        "typings": "^1.0.4"
+    }
 }

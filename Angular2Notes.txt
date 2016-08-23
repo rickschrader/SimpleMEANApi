@@ -1,3 +1,5 @@
+https://angular.io/docs/ts/latest/quickstart.html
+
 http://angularjs.blogspot.com/2015/08/angular-1-and-angular-2-coexistence.html
 
 https://daveceddia.com/angular-2-in-plain-js/
@@ -6,7 +8,6 @@ https://daveceddia.com/angular-2-in-plain-js/
 Based on https://github.com/abhinavmsra/angular2
 
 npm install
-npm run build
-npm run start
+npm start
 
 console.log messages go to console in browser dev tools

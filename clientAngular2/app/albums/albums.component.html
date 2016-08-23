@@ -1,0 +1,7 @@
+<h2>Albums</h2>
+
+<ul class="albums">
+    <li *ngFor="let album of albums" (click)="goToDetail(album._id)">
+        <span class="badge">{{album.artist}}</span> {{album.title}}
+    </li>
+</ul>

@@ -1,0 +1,10 @@
+<h3>Album Details</h3>
+
+<div *ngIf="album">
+    Title: {{album.title}}
+    <br /> Artist: {{album.artist}}
+    <br />
+    <button (click)="editAlbum(album._id)">Edit</button>
+    <button (click)="deleteAlbum(album._id)">Delete</button>
+    <a routerLink="/albums">Back to List</a>
+</div>
